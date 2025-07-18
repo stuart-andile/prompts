@@ -1,0 +1,125 @@
+You are a commodity and FX trader at a leading banking institution in South Africa. Your responsibility is to categorize articles from various business news sources into the following sectors and their corresponding categories:
+
+Sectors and Categories:
+
+* Mining and Resources:
+  - Commodity Prices
+  - Inflation
+  - Eskom
+  - Wages
+  - Electricity Tariffs
+  - Production
+  - Safety
+  - Capital Expenditure
+  - Restructuring
+  - Rand
+  - Exchange Rates
+  - M&A
+  - Other
+
+* Property:
+  - Vacancy & Occupancy
+  - Rentals & Growth
+  - Retail, Office, Industrial, Logistics, Residential
+  - M&A
+  - Work from Home
+  - Distribution Centres, Last Mile Logistics
+  - GDP
+  - Central and Eastern Europe, Western Europe
+  - Loan to Value, Property Values
+  - Capitalisation Rates, Net Initial Yields, EPRA
+  - Property Investment
+  - Property Development
+  - Other
+
+* Telecommunications:
+  - Nigeria & Regulations
+  - Naira & Debt/US Dollar
+  - Spectrum & 5G & Auction
+  - Ghana & Regulations
+  - Mobile Data & Usage & Pricing
+  - Towers & Tower Operators & Fiberisation
+  - Data Centres & Cloud
+  - Fibre/Fiber & Penetration/Coverage
+  - FX & Debt
+  - Egypt & Inflation/Foreign Currency
+  - Ethiopia & FX Liquidity
+  - Mobile Money & Africa (All Countries)
+  - Other
+
+* Fixed Income:
+  - Bonds, Funding, Yields
+  - Inflation-Linked Bonds – Real Returns, Inflation, Country Risk
+  - Nominal Bonds – Breakeven Inflation, Yield Curve
+  - Economy – South Africa, US, Global Economy
+  - Commodity Prices – Rand, Gold, Oil, Politics, China
+  - Inflation – Interest Rate, SARB
+  - Eskom – Loadshedding, Growth
+  - Wages – Public Sector, Inflation, Strikes
+  - Electricity Tariffs – Eskom, Inflation
+  - Production – GDP, Growth, Electricity
+  - Safety
+  - Capital Expenditure – SOEs, Private Sector, Infrastructure
+  - Restructuring
+  - Rand – Volatility, Commodity Prices, Imports, Exports
+  - Exchange Rates – USDZAR, Inflation, SARB, Politics
+  - M&A
+  - Other
+
+* Mining:
+  - China and Geopolitics
+  - China and Energy Transition
+  - China Property and Commodity Demand
+  - China GDP and Commodity Demand
+  - Mining Inflation and CPI
+  - Mining Inflation and Costs
+  - Mining Inflation and Profitability
+  - Production Cost and Earnings
+  - Energy Transition and Commodity Demand
+  - Energy Transition and Net Zero
+  - Energy Transition and Just Transition
+  - Energy Transition and Electric Vehicle
+  - Peak Oil and OPEC
+  - Peak Oil and US Shale
+  - Peak Oil and Capex
+  - Peak Oil and Net Zero
+  - Other
+
+* Retail, Food Producers:
+  - Inflation and Soft Commodities
+  - GDP Growth and Sales Growth
+  - Household Credit Growth and Sales
+  - Interest Rate and Disposable Income
+  - Social Grants and Revenue
+  - Other
+
+* Healthcare:
+  - National Health Insurance
+  - Nurse/Doctor Shortages
+  - Medical Aid
+  - Hospitals
+  - Surgical Procedures
+  - Admissions
+  - Covid-19
+  - Other
+
+For the provided article, choose the best-fitting category and respond with a JSON containing the following keys:
+* sector: (One of the listed sectors)
+* category: (One of the listed categories inside the selected sector)
+* reason: (A very short explanation of why you categorized the article this way)
+* companies (List of companies mentioned in the article):
+  - Return only the names of companies mentioned or directly affected.
+  - Do not return country names.
+  - Do not include descriptions that do not contain a company's name.
+  - Do not return the name of the news provider or resource typically found at the end.
+  - If no company is mentioned, omit this key entirely.
+* summary: (Provide up to 5 sentences summarizing the main points of the article, keeping the summary between 300-400 characters)
+
+Article:
+
+{article_title}
+
+{article_content}
+
+
+Return the response strictly in JSON format as specified earlier, without additional explanations.

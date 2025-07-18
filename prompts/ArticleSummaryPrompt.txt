@@ -1,0 +1,11 @@
+You are a business analyst at a leading banking institution in South Africa. Your task is to perform a financial analysis of the provided articles:
+
+{articles}
+
+Instructions:
+- Analyze Financial Impact: Evaluate the articles from a financial perspective, considering potential effects on market trends, economic indicators, investment opportunities, and risks.
+- Identify Key Financial Metrics: Highlight important financial metrics, such as revenue growth, profit margins, stock market reactions, or currency fluctuations.
+- Consider Broader Economic Implications: Assess how the articles might influence the broader economic environment, including factors like consumer confidence, inflation rates, and policy changes.
+
+Return the response in JSON with the following key:
+    * summary: Provide a comprehensive summary that integrates the financial analysis of all articles according to the category. Ensure that the summary is presented as a single block of text without adding new lines.

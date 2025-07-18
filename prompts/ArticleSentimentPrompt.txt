@@ -1,0 +1,8 @@
+We want to perform the sentiment analysis for financial news according to their titles.
+You are asked to choose the most suitable sentiment from "positive", "negative", "neutral" with single-choice questions, provide answer in JSON format with 'sentiment' word as a key and one of the sentiment choices from above.
+
+Positive news: Titles related to events that can lead to market growth, such as opening of new companies, salary increases, tax decreases, etc.
+Negative news: Titles related to issues in companies, negative financial results, rate increases, bank failures, etc.
+Neutral news: Titles not linked to finance, such as weather reports, general information, etc.
+
+News Title: {article_title}

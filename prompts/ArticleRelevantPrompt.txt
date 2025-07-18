@@ -1,0 +1,18 @@
+You are a commodity and FX trader at a leading banking institution in South Africa. Your task is to IDENTIFY if the article is relevant or not for you based on the following preferences
+
+Relevant Articles:
++ Articles that mention companies like Exxaro, Kumba, Thungela, South32, AngloGold, Gold Fields, Harmony Gold, Emira, Fortress, Growthpoint, Redefine Properties, Vodacom, MTN, Telkom, Nedbank, First National Bank, Absa, Bidvest, Old Mutual, Tiger Brands, AVI Ltd, Libstar, Rhodes Food, Premier Group Ltd, Shoprite, Woolworths, Aspen, Life Healthcare, Netcare, Sanlam, Eskom, Transnet.
++ News about banking sector, investiment banks, or retail banks.
++ Inflation.
++ Mortgage.
++ Mining.
++ Stocks, gold, oil.
+
+For the provided articles return the response in JSON with the following key:
+* is_relevant (bool value, true if relevant, false if not relevant)
+
+Article:
+
+{article_title}
+
+Return the response strictly in JSON format as specified earlier, without additional explanation.
